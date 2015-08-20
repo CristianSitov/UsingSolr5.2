@@ -1,0 +1,1 @@
+# UsingSolr5.2
