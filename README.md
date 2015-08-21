@@ -15,7 +15,12 @@
   * chown copied folder
   * edit solrconfig.xml
 4. Create configuration files
-  * add data-import.xml
+  * add data-import.xml (see code below)
+5. Create Core from UI
+  * instanceDir: /opt/solr/example/teste/
+  * dataDir: /opt/solr/example/teste/data/ 
+6. Reload service + create Core again to trigger presence/detection
+
 ```xml
 <dataConfig>
 <dataSource type="JdbcDataSource"
@@ -36,10 +41,6 @@
 </document>
 </dataConfig>
 ```
-5. Create Core from UI
-  * instanceDir: /opt/solr/example/teste/
-  * dataDir: /opt/solr/example/teste/data/ 
-6. Reload service + create Core again to trigger presence/detection
 
 # Test
 1. Import via DIH UI
